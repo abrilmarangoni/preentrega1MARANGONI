@@ -1,0 +1,33 @@
+header {
+  position: sticky;
+  top: 0%;
+}
+.conteiner__1 {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #997d7d;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .logo__palcos {
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .nav__list {
+    margin: 55px;
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav__link {
+    margin-left: 20px;
+    font-size: 20px;
+    height: 30px;
+  }
+}
