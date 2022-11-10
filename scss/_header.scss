@@ -8,9 +8,7 @@ header {
   z-index: 1;
   background-color: #997d7d;
   margin: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @include center-center-center;
 
   .logo__palcos {
     width: 150px;

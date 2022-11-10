@@ -1,9 +1,7 @@
 .logo__igwh {
   display: block;
   margin: 10rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @include center-center-center;
   font-size: 40px;
   background-color: #997d7d;
 }

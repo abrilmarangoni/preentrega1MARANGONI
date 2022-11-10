@@ -1,17 +1,20 @@
-@mixin flex-col-center {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-@mixin flex-row-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 @mixin flex-alingItems-justify {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@mixin flex-wrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@mixin center-center-center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+@mixin grid-repeat-gap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }

@@ -23,9 +23,7 @@
 
 .parra__fo {
   color: #997d7d;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @include flex-alingItems-justify;
   justify-content: center;
   margin: 1rem;
   font-size: 20px;

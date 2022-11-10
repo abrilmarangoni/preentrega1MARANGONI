@@ -1,9 +1,7 @@
 .formu__lario {
   display: block;
   margin: 1rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @include center-center-center;
   color: #997d7d;
   font-size: 28px;
 }

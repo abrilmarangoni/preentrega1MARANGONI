@@ -1,14 +1,10 @@
 .vido__maps {
   margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex-wrap-center;
 }
 
 .parra__fu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  @include grid-repeat-gap;
 
   .index__par {
     margin: 2rem;
@@ -34,25 +30,19 @@
 
   .list__b {
     list-style-type: none;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    @include center-center-center;
 
     .list__a {
       color: #ffffff;
       height: 30px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
+      @include center-center-center;
       margin-top: 6px;
     }
   }
 }
 
 .bo__row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex-wrap-center;
   margin: 1rem;
   padding: 1rem;
 
