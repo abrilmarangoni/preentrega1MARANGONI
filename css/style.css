@@ -213,7 +213,11 @@ body {
 }
 
 .pa-rra {
+  display: flex;
   color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 1324px) {
