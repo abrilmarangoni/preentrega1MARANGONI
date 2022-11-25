@@ -1,7 +1,13 @@
 .logo__igwh {
   display: block;
-  margin: 10rem;
+  margin: 1rem;
   @include center-center-center;
   font-size: 40px;
   background-color: #997d7d;
+}
+.copy-right {
+  @include center-center-center;
+  color: white;
+  margin: 6px;
+  padding: 6px;
 }

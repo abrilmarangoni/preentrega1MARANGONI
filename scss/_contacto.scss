@@ -1,7 +1,14 @@
 .formu__lario {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
   @include center-center-center;
   color: #997d7d;
   font-size: 28px;
+}
+.formu__conteiner {
+  @include center-center-center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
