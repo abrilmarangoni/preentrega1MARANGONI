@@ -212,14 +212,6 @@ body {
   text-align: center;
 }
 
-.pa-rra {
-  display: flex;
-  color: #ffffff;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 1324px) {
   .imagen__edi {
     height: 350px;
@@ -270,10 +262,24 @@ body {
     height: 800px;
   }
   .ubica__tion {
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 350px;
     padding: 2rem;
   }
+}
+.pa-rra {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.ubi__conteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
