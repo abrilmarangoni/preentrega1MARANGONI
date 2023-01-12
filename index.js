@@ -1,22 +1,47 @@
-//comentarios de una linea con // nos sirve para ver si el archivo esta linkeado
-console.log("mi primera linea bien usada");
+const precioBaños = 80;
+const precioHabitaciones = 200;
 
-//declaracion de espacio de memorias
-//forma 1 con var para variables: es una practica  no recomendada usar var es mejor let
-//declarando una variable
-// var autor;
-//autor = "marangoni abril";
-// console.log(autor);   trae problemas este caso
+const tamañoBase = 20;
+const tamañoBaño = 4;
+const tamañoHabitaciones = 10;
 
-//en una variable tenemos su nombre y valor
-//buena practica
-let autora = "departamento";
-autora = "semipiso";
-console.log(autora);
-//una variable es un espacio de memoria donde puedo usar un valor y despues reutilizarlo
-//js es sensible a la mayus y a la minus console.log AUTORA O Autora no sirven xq esta distinto
+function valorAlquiler() {
+  let precio = 0;
+  let tamaño = 0;
 
-//tercera forma asignar espacio de memoria mediante const
-const edificio = "palcos del golf";
-console.log(edificio);
-//a unna constante no le puedo reasignar otro valor
+  alert(
+    "Indique el número de habitaciones y baños que desea en su departamento"
+  );
+
+  let cantidadHabitaciones = prompt("Numero de habitaciones:");
+  let cantidadBaños = prompt("Numero de baños");
+
+  if (cantidadBaños < 1 || cantidadHabitaciones < 1) {
+    alert("No cumple la cantidad minima de baños y habitaciones");
+  } else {
+    precio =
+      cantidadBaños * precioBaños + cantidadHabitaciones * precioHabitaciones;
+    tamaño =
+      cantidadBaños * tamañoBaño +
+      cantidadHabitaciones * tamañoHabitaciones +
+      tamañoBase;
+  }
+
+  alert(
+    "Su solicitud corresponde a un departamento de " +
+      tamaño +
+      " metros cuadrados por el valor de " +
+      precio +
+      " dolares"
+  );
+}
+
+let respuesta;
+let solicitudes = [];
+
+do {
+  valorAlquiler();
+  respuesta = prompt("Desea realizar otra solicitud?");
+} while (respuesta != "no");
+
+alert("Muchas gracias por su solicitud!");
